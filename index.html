@@ -7,22 +7,21 @@
     <title>Minesweeper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,700&family=Roboto+Mono:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<div class="container"></div>
 
 <body onload="onInit()">
-
     <div class="game-container">
         <h1>Minesweeper</h1>
 
+
         <div class="game-controls">
             <div class="info-panel">
-                <span>Mines: </span class="mines-count">0</span></span>
+                <span>Mines: <span class="mines-count">0</span></span>
             </div>
 
             <button class="smiley" onclick="onInit()">😊</button>
@@ -32,21 +31,22 @@
             </div>
         </div>
 
-        <div class="Level-button">
+        <div class="level-buttons">
             <button onclick="setLevel(4,2)">Beginner</button>
             <button onclick="setLevel(8,14)">Medium</button>
             <button onclick="setLevel(12,32)">Expert</button>
         </div>
 
-        <div class="board-container">
-        </div>
-
-        <footer>
-            <p>Created by Eden Tenenbaum</p>
-        </footer>
 
     </div>
-    <script src="js/game.js"></script>
+    <div class="board-container">
+    </div>
+
+    <footer>
+        <p>Created by Eden Tenenbaum</p>
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
